@@ -35,6 +35,17 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
         <property name="entityManagerFactory" ref="entityManagerFactory"></property>
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager" />
+    
+    <!-- Bean de la couche Dao -->
+    <bean name="Ladao" class="dao.DaoImpl"/>
+    <!-- Bean de la couche Service -->
+    <bean name="service" class="service.ServiceImpl">
+    	<property name="dao" ref="Ladao"/>
+    </bean>
+    <!-- Bean de création d'objets -->
+    <bean name="Lapersonne" class="metier.Personne"/>
+    <bean name="Lavoiture" class="metier.Voiture"/>
+    
     <context:annotation-config></context:annotation-config>
    
 </beans>

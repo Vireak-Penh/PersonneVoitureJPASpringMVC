@@ -1,4 +1,4 @@
-package metier;
+package fr.formation.PersonneVoitureJPA.metier;
 
 import java.util.List;
 

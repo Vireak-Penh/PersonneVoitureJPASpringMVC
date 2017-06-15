@@ -10,7 +10,7 @@ la base de données ainsi que les paramètres de cette connexion. Il y a aussi u
 		<properties>
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
-			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<!-- <property name="hibernate.hbm2ddl.auto" value="update"/> -->
 		</properties>
 	</persistence-unit>
 </persistence>
