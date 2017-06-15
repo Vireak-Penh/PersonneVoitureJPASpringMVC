@@ -12,10 +12,14 @@ public interface IGestionPersonne {
 
 	public int supprimerPersonne(Personne p);
 
-	public List<Personne> findall();
+	public List<Personne> findAll();
 
 	public int updatePersonne(Personne p, String nom, String prenom, int age);
 
 	public Personne getPersonne(int idPersonne);
+
+	public void supprimerPersonne(Integer idPers);
+
+	public void updatePersonne(Personne p);
 
 }

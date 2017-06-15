@@ -27,7 +27,7 @@ public class DaoImpl implements IDao {
 	}
 
 	@Override
-	public List<Personne> findall() {
+	public List<Personne> findAll() {
 		Query req = em.createQuery("SELECT p FROM Personne p");
 		return req.getResultList();
 	}
@@ -78,6 +78,18 @@ public class DaoImpl implements IDao {
 		Query req = em.createQuery("SELECT v FROM Voiture v where v.personne.id=?");
 		req.setParameter(1, p.getId());
 		return req.getResultList();
+	}
+
+	@Override
+	public void updatePersonne(Personne p) {
+		// TODO Auto-generated method stub
+		em.merge(p);
+	}
+
+	@Override
+	public void supprimerPersonne(Integer idPers) {
+		// TODO Auto-generated method stub
+		em.remove(em.find(Personne.class, idPers));
 	}
 
 }

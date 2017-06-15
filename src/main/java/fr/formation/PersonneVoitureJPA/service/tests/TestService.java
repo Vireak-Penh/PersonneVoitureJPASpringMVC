@@ -25,12 +25,12 @@ public class TestService {
 	@Test
 	public void test() {
 		try {
-			int nb = igp.findall().size();
+			int nb = igp.findAll().size();
 			p.setNom("test");
 			p.setPrenom("test");
 			p.setAge(25);
 			igp.ajouterPersonne(p);
-			int nb2 = igp.findall().size();
+			int nb2 = igp.findAll().size();
 			assertEquals("erreur", nb + 1, nb2, 0);
 		} catch (Exception e) {
 			assertTrue(e.getMessage(), false);

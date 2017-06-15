@@ -10,7 +10,7 @@ public interface IDao {
 
 	public int supprimerPersonne(Personne p);
 
-	public List<Personne> findall();
+	public List<Personne> findAll();
 
 	public int updatePersonne(Personne p, String nom, String prenom, int age);
 
@@ -27,4 +27,9 @@ public interface IDao {
 	public Voiture getVoiture(int idVoiture);
 
 	public List<Voiture> afficherMesVoitures(Personne P);
+
+	public void supprimerPersonne(Integer idPers);
+
+	public void updatePersonne(Personne p);
+
 }

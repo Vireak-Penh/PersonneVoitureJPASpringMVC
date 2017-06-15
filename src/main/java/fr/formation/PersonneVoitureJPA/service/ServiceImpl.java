@@ -59,9 +59,9 @@ public class ServiceImpl implements IGestionPersonne, IGestionVoiture {
 	}
 
 	@Override
-	public List<Personne> findall() {
+	public List<Personne> findAll() {
 		// TODO Auto-generated method stub
-		return dao.findall();
+		return dao.findAll();
 	}
 
 	@Override
@@ -86,6 +86,18 @@ public class ServiceImpl implements IGestionPersonne, IGestionVoiture {
 	public List<Voiture> afficherMesVoitures(Personne p) {
 		// TODO Auto-generated method stub
 		return dao.afficherMesVoitures(p);
+	}
+
+	@Override
+	public void supprimerPersonne(Integer idPers) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updatePersonne(Personne p) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
