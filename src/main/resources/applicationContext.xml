@@ -37,14 +37,14 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans
     <tx:annotation-driven transaction-manager="transactionManager" />
     
     <!-- Bean de la couche Dao -->
-    <bean name="Ladao" class="dao.DaoImpl"/>
+    <bean name="Ladao" class="fr.formation.PersonneVoitureJPA.dao.DaoImpl"/>
     <!-- Bean de la couche Service -->
-    <bean name="service" class="service.ServiceImpl">
+    <bean name="service" class="fr.formation.PersonneVoitureJPA.service.ServiceImpl">
     	<property name="dao" ref="Ladao"/>
     </bean>
     <!-- Bean de création d'objets -->
-    <bean name="Lapersonne" class="metier.Personne"/>
-    <bean name="Lavoiture" class="metier.Voiture"/>
+    <bean name="Lapersonne" class="fr.formation.PersonneVoitureJPA.metier.Personne"/>
+    <bean name="Lavoiture" class="fr.formation.PersonneVoitureJPA.metier.Voiture"/>
     
     <context:annotation-config></context:annotation-config>
    

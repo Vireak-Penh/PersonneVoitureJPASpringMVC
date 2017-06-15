@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Home</title>
 </head>
 <body>
+	<h1>Page d'accueil</h1>
+	<h2>Bienvenue dans la Matrice</h2>
+	<p>Le controller nous dit : ${test}</p>
+	
 
 </body>
 </html>
